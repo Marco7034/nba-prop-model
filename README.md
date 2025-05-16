@@ -28,6 +28,22 @@ A machine learning system that analyzes NBA player stats and betting odds to ide
 
 ## 🔧 Project Structure
 
+nba-prop-model/
+│
+├── data/                     # Raw and processed data files (CSV, JSON)
+├── models/                   # Saved machine learning models
+├── fetch_nba_stats.py        # Script to fetch historical NBA player stats
+├── fetch_fanduel_odds.py     # Script to fetch FanDuel odds via The Odds API
+├── merge_data.py             # Combines player stats with odds data
+├── train_model.py            # ML/DL model training script
+├── predict.py                # Script to make predictions using the trained model
+├── app.py                    # FastAPI app to serve predictions as an API
+├── send_alerts.py            # Optional script to send alerts for high-confidence picks
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project documentation
+└── .env                      # Environment variables (API keys) — not committed to GitHub
+
+
 ## 🧠 Inspiration
 
 This project was built as a demonstration of applying data science and machine learning to real-world 
